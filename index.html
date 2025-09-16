@@ -1,439 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ligue Warzone – Classement & Journées</title>
-  <meta name="description" content="Site gratuit et simple pour présenter une ligue Warzone : classement, journées (Masters Kills), joueurs et règlement." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ligue Warzone — Classement & Calendrier</title>
+  <meta name="description" content="Classement, journées (Masters Kills) et calendrier de la Ligue Warzone."/>
   <style>
-    :root{ --bg:#0f1115; --card:#151924; --muted:#8b98a5; --text:#e7edf3; --accent:#6dd3ff; --accent2:#9b8cff; --ok:#36d399; --warn:#fbbf24; --bad:#ef4444; --border:#202636; }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0e1014 0%,#0f1115 40%,#0a0c10 100%);color:var(--text);}    
-    a{color:var(--accent)}
-    .wrap{max-width:1100px;margin:0 auto;padding:24px}
-    header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:16px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:40px;height:40px;border-radius:12px;background:conic-gradient(from 140deg at 50% 50%,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:800;color:#0a0c10}
-    .title h1{font-size:24px;margin:0}
-    .title p{margin:2px 0 0;color:var(--muted);font-size:13px}
-
+    :root{ --bg:#0f1115; --card:#151924; --muted:#8b98a5; --text:#e7edf3; --border:#202636; --bad:#ef4444; }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:#0b0f14;color:var(--text)}
+    .wrap{max-width:1100px;margin:0 auto;padding:22px}
+    header{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}
+    .title h1{margin:0;font-size:22px}
+    .title p{margin:4px 0 0;color:var(--muted);font-size:13px}
     .tabs{display:flex;gap:8px;flex-wrap:wrap}
-    .tab{background:var(--card);border:1px solid var(--border);padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:600;color:#cfe6ff;opacity:.85}
-    .tab.active,.tab:hover{outline:2px solid rgba(109,211,255,.25);opacity:1}
-
-    .cards{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:16px}
-    .card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px}
-    @media(min-width:800px){.card.half{grid-column:span 6}}
-
+    .tab{border:1px solid var(--border);background:#111622;color:#d8e7ff;border-radius:10px;padding:8px 12px;cursor:pointer}
+    .tab.active,.tab:hover{outline:2px solid rgba(109,211,255,.25)}
+    .card{background:#121826;border:1px solid var(--border);border-radius:16px;padding:16px;margin-top:14px}
     .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+    .pill{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#0f1421;color:#cfe6ff}
+    .btn{cursor:pointer;padding:6px 10px;border:1px solid var(--border);border-radius:10px;background:#141b24;color:#e8eef5}
     .input{background:#0c0f16;border:1px solid var(--border);padding:8px 10px;border-radius:10px;color:var(--text)}
-    .btn{background:linear-gradient(180deg,#1f2a3c,#101625);color:#e8f1ff;border:1px solid var(--border);padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:600}
-    .btn.ghost{background:transparent}
-    .btn:hover{filter:brightness(1.1)}
-
-    /* Classement */
     table{width:100%;border-collapse:separate;border-spacing:0 10px}
-    th,td{text-align:left;padding:10px}
-    th{color:#b9c6d1;font-size:12px;letter-spacing:.6px;text-transform:uppercase}
-    tbody tr{background:#121826;border:1px solid var(--border)}
+    th,td{padding:10px;text-align:left}
+    th{color:#b9c6d1;font-size:12px;letter-spacing:.5px;text-transform:uppercase}
+    tbody tr{background:#0f1421;border:1px solid var(--border)}
     tbody tr td:first-child{border-top-left-radius:12px;border-bottom-left-radius:12px}
     tbody tr td:last-child{border-top-right-radius:12px;border-bottom-right-radius:12px}
-    .rank{width:38px;text-align:center;font-weight:800}
-    .team{display:flex;align-items:center;gap:10px}
-    .badge{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#0a0c10}
-
-    /* Match-like cards */
-    .match{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:#0f1421}
-    .match + .match{margin-top:10px}
-    .match .when{color:var(--muted);font-size:12px}
-    .tag{font-size:11px;padding:4px 8px;border:1px solid var(--border);border-radius:8px;background:#0e1320;color:#cfe6ff}
-
-    /* Grid */
-    .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
-    .teamcard{border:1px solid var(--border);background:#111725;border-radius:14px;padding:12px}
-    .teamcard h4{margin:8px 0 6px}
+    .rank{width:36px;text-align:center;font-weight:800}
+    .badge{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#233042;color:#e7edf3;font-weight:800}
+    /* calendrier */
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+    .event{border:1px solid var(--border);background:#0f1421;border-radius:14px;padding:12px}
+    .event.played .title{ text-decoration: line-through; text-decoration-color: var(--bad); text-decoration-thickness: 2px; color:var(--bad) }
     .muted{color:var(--muted)}
-
-    /* Calendar */
-    .played{ text-decoration: line-through; color: var(--bad); opacity:.9 }
-    .eventcard{border:1px solid var(--border);background:#0f1421;border-radius:14px;padding:12px;display:flex;justify-content:space-between;align-items:center}
-    .eventmeta{color:var(--muted);font-size:12px}
-
-    /* Footer */
-    footer{margin:22px 0;color:var(--muted);font-size:12px}
-    .pill{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#0f1421;color:#cfe6ff}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">WZ</div>
-        <div class="title">
-          <h1>Ligue Warzone</h1>
-          <p>Classement, journées (Masters Kills), joueurs & règlement</p>
-        </div>
-      </div>
-      <nav class="tabs" role="tablist" aria-label="Navigation principale">
-        <button class="tab active" data-tab="standings">Classement</button>
-        <button class="tab" data-tab="fixtures">Journées</button>
-        <button class="tab" data-tab="calendar">Calendrier</button>
-        <button class="tab" data-tab="players">Joueurs</button>
-        <button class="tab" data-tab="rules">Règlement</button>
-      </nav>
-    </header>
+<div class="wrap">
+  <header>
+    <div class="title">
+      <h1>Ligue Warzone</h1>
+      <p>Classement, journées & calendrier</p>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Navigation">
+      <button class="tab active" data-tab="standings">Classement</button>
+      <button class="tab" data-tab="calendar">Calendrier</button>
+    </nav>
+  </header>
 
-    <!-- CLASSEMENT -->
-    <section class="card" id="standings" role="tabpanel">
-      <div class="toolbar">
-        <input id="searchTeam" class="input" placeholder="Rechercher un joueur…" />
-        <span class="pill" id="seasonLabel">Saison 1</span>
-        <span class="pill" id="lastUpdate">Dernière mise à jour — —</span>
-      </div>
-      <table aria-label="Tableau du classement">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Joueur</th>
-            <th title="Journées jouées">MJ</th>
-            <th title="Kills cumulés">Kills</th>
-            <th title="Bonus classement (60/40/20/10)">Bonus</th>
-            <th title="Points = Kills + Bonus">Pts</th>
-          </tr>
-        </thead>
-        <tbody id="standingsBody"></tbody>
-      </table>
-    </section>
+  <!-- CLASSEMENT -->
+  <section id="standings" class="card" role="tabpanel">
+    <div class="toolbar">
+      <input id="search" class="input" placeholder="Rechercher un joueur…" />
+      <span id="season" class="pill">Saison —</span>
+      <span id="updated" class="pill">Dernière mise à jour —</span>
+    </div>
+    <table aria-label="Classement">
+      <thead>
+        <tr><th>#</th><th>Joueur</th><th>MJ</th><th>Kills</th><th>Bonus</th><th>Pts</th></tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </section>
 
-    <!-- JOURNEES -->
-    <section class="card half" id="fixtures" role="tabpanel" hidden>
-      <div class="toolbar">
-        <button class="btn" id="addJournee">Ajouter une journée</button>
-        <button class="btn ghost" id="addEntry">Ajouter résultats joueur</button>
-        <button class="btn ghost" id="exportJSON">Exporter JSON</button>
-        <input type="file" id="importJSON" accept="application/json" hidden>
-        <button class="btn ghost" id="importBtn">Importer JSON</button>
-      </div>
-      <div id="journeesList"></div>
-    </section>
+  <!-- CALENDRIER -->
+  <section id="calendar" class="card" role="tabpanel" hidden>
+    <div class="toolbar">
+      <button id="togglePlayed" class="btn">Basculer “jouée” (saisie rapide)</button>
+    </div>
+    <div id="calwrap" class="grid"></div>
+    <p class="muted" style="margin-top:8px">Les journées <strong>jouées</strong> sont <span style="color:#ef4444">rouges</span> et <span style="text-decoration:line-through;color:#ef4444">barrées</span>.</p>
+  </section>
+</div>
 
-    <!-- CALENDRIER -->
-    <section class="card" id="calendar" role="tabpanel" hidden>
-      <div class="toolbar">
-        <button class="btn" id="addEvent">Ajouter une rencontre</button>
-        <button class="btn ghost" id="togglePlayedView">Basculer: Tous ⇄ À jouer</button>
-      </div>
-      <div id="calendarWrap" class="grid"></div>
-      <p class="muted" style="margin-top:8px">Les rencontres <strong>jouées</strong> s’affichent <span style="color:#ef4444">rouges</span> et <span style="text-decoration:line-through;color:#ef4444">barrées</span>. Cliquez sur une carte pour basculer son statut.</p>
-    </section>
+<script>
+/* ---------- SOURCES DE DONNÉES ---------- */
+const STANDINGS_URL = "./warzone.json";
+const CALENDAR_URL  = "./calendar_warzone.json";
 
-    <!-- JOUEURS -->
-    <section class="card half" id="players" role="tabpanel" hidden>
-      <div class="grid" id="playersGrid"></div>
-    </section>
+/* ---------- UTILS ---------- */
+const asInt = v => Number.parseInt(v,10) || 0;
+const byId  = id => document.getElementById(id);
+const fmt   = iso => { const d=new Date(iso); return isNaN(d)? "—" : d.toLocaleString('fr-FR',{dateStyle:'medium', timeStyle:'short'}) };
 
-    <!-- RÈGLEMENT -->
-    <section class="card" id="rules" role="tabpanel" hidden>
-      <h3>Règlement – synthèse (adapté Warzone)</h3>
-      <ol>
-        <li><strong>Participants.</strong> 15 joueurs. À chaque journée : 3 matchs (poules) de 4 joueurs, 3 joueurs exemptés. 5 manches par journée.</li>
-        <li><strong>Notation par journée.</strong> Points journée = Kills (5 manches) + Bonus (1er +60, 2e +40, 3e +20, 4e +10) sauf si <em>points officiels</em> fournis par Excel.</li>
-        <li><strong>Classement général.</strong> Somme des points de chaque journée. Égalités : points > kills > bonus > ordre alphabétique.</li>
-      </ol>
-    </section>
+/* ---------- ÉTAT ---------- */
+let state = { season: 1, updatedAt: new Date().toISOString(), players: [], journees: [], calendar: [] };
 
-    <footer class="wrap">Fait pour vous 💙 — modèle statique hébergeable (GitHub Pages, Netlify, Vercel).</footer>
-  </div>
-
-  <script>
-    // --- CONFIG ---
-    // Mets ici l'URL GitHub Pages de ton JSON si tu veux une synchro auto (laisser vide sinon)
-    const REMOTE_DATA_URL = "https://souleyyyy.github.io/warzone-ligue/warzone.json";
-
-    // --- ÉTAT ---
-    const defaultState = {
-      season: 1,
-      updatedAt: new Date().toISOString(),
-      players: [
-        { id:'MEH', name:'Mehdi Touzout', color:'#6dd3ff' },
-        { id:'ALI', name:'Ali', color:'#9b8cff' },
-        { id:'SOF', name:'Sofiane', color:'#36d399' },
-        { id:'SAL', name:'Sallah', color:'#fbbf24' },
-        { id:'MDM', name:'Mehdimed', color:'#ef4444' },
-        { id:'MDN', name:'Mehdy Daniel', color:'#10b981' },
-        { id:'KRM', name:'Karim', color:'#60a5fa' },
-        { id:'THE', name:'Théo', color:'#f472b6' },
-        { id:'SOU', name:'Souley', color:'#22d3ee' },
-        { id:'YOU', name:'Youssef', color:'#a3e635' },
-        { id:'ADJ', name:'Adji', color:'#fb7185' },
-        { id:'ERI', name:'Erico', color:'#eab308' },
-        { id:'MIK', name:'Mika', color:'#c084fc' },
-        { id:'OKA', name:'Okan', color:'#f59e0b' },
-        { id:'NAS', name:'Nassim', color:'#34d399' }
-      ],
-      journees: [],
-      events: []
-    };
-
-// --- ÉTAT ---
-// On désactive complètement le cache localStorage
-const state = JSON.parse(JSON.stringify(defaultState));
-
-function saveState(){ 
-  state.updatedAt = new Date().toISOString();
-  render();
+/* ---------- CLASSEMENT (Pts = kills + bonus) ---------- */
+function computeStandings(){
+  const table = new Map(
+    (state.players || []).map(p => [
+      p.id,
+      { id:p.id, name:p.name, color:p.color||'#233042', MJ:0, KILLS:0, BONUS:0, PTS:0 }
+    ])
+  );
+  const bonusMap = {1:60,2:40,3:20,4:10};
+  for (const j of (state.journees || [])) {
+    for (const e of (j.entries || [])) {
+      const row = table.get(e.player);
+      if (!row) continue;
+      row.MJ += 1;
+      const kills = asInt(e.kills);
+      const bonus = Number.isFinite(Number(e.bonus))
+        ? asInt(e.bonus)
+        : (bonusMap[asInt(e.rank)] || 0);
+      const pts = kills + bonus; // règle fixée
+      row.KILLS += kills; row.BONUS += bonus; row.PTS += pts;
+    }
+  }
+  return Array.from(table.values())
+    .sort((a,b)=> (b.PTS-a.PTS) || (b.KILLS-a.KILLS) || (b.BONUS-a.BONUS) || a.name.localeCompare(b.name));
 }
 
-    function fmtDate(iso){ const d=new Date(iso); if(isNaN(d)) return '—'; return d.toLocaleString('fr-FR',{dateStyle:'medium', timeStyle:'short'}); }
-    function playerById(id){return (state.players||[]).find(function(p){return p.id===id})}
+function renderStandings(){
+  const q = byId('search').value.toLowerCase();
+  const rows = computeStandings().filter(r => r.name.toLowerCase().includes(q));
+  byId('tbody').innerHTML = rows.map((r,i)=>`
+    <tr>
+      <td class="rank">${i+1}</td>
+      <td><div style="display:flex;align-items:center;gap:10px"><div class="badge">${r.id}</div><strong>${r.name}</strong></div></td>
+      <td>${r.MJ}</td><td>${r.KILLS}</td><td>${r.BONUS}</td><td><strong>${r.PTS}</strong></td>
+    </tr>`).join("");
+  byId('season').textContent  = 'Saison ' + (state.season||'—');
+  byId('updated').textContent = 'Dernière mise à jour — ' + fmt(state.updatedAt);
+}
 
-    async function fetchRemote(){
-      if(!REMOTE_DATA_URL) return;
-      try{
-        const res = await fetch(REMOTE_DATA_URL, { cache: 'no-store' });
-        if(!res.ok) throw new Error('HTTP '+res.status);
-        const obj = await res.json();
-        if(obj.players) state.players = obj.players;
-        if(obj.journees) state.journees = mergeJourneesPlus(state.journees,obj.journees);
-        if(obj.events) state.events = mergeEvents(state.events,obj.events);
-        saveState();
-      }catch(e){ console.warn('Sync distante ignorée:', e); }
-    }
-
-    // --- CLASSEMENT --- (priorité aux points/bonus fournis)
-    function computeStandingsAuth(){
-      var table = {};
-      for(var i=0;i<(state.players||[]).length;i++){
-        var p=state.players[i];
-        table[p.id] = { id:p.id, name:p.name, color:p.color||'#6dd3ff', MJ:0, KILLS:0, BONUS:0, Pts:0 };
-      }
-      var bonusMap = {1:60,2:40,3:20,4:10};
-      for(var jIdx=0;jIdx<(state.journees||[]).length;jIdx++){
-        var j = state.journees[jIdx];
-        for(var k=0;k<(j.entries||[]).length;k++){
-          var e = j.entries[k];
-          if(!e || !table[e.player]) continue;
-          var row = table[e.player];
-          row.MJ += 1;
-          var kills_i = (typeof e.kills!=='undefined' && e.kills!==null && Number.isFinite(Number(e.kills)))? Number(e.kills):0;
-          var bonus_i = (typeof e.bonus!=='undefined' && e.bonus!==null && Number.isFinite(Number(e.bonus)))? Number(e.bonus)
-                        : ((typeof e.rank!=='undefined' && e.rank!==null && Number.isFinite(Number(e.rank)))? (bonusMap[Number(e.rank)]||0):0);
-          var pts_i = (typeof e.points!=='undefined' && e.points!==null && Number.isFinite(Number(e.points)))? Number(e.points):(kills_i+bonus_i);
-          row.KILLS+=kills_i; row.BONUS+=bonus_i; row.Pts+=pts_i;
-        }
-      }
-      var arr=[]; for(var key in table){ if(table.hasOwnProperty(key)) arr.push(table[key]); }
-      arr.sort(function(a,b){return (b.Pts-a.Pts)||(b.KILLS-a.KILLS)||(b.BONUS-a.BONUS)||a.name.localeCompare(b.name)});
-      return arr;
-    }
-
-    function renderStandings(){
-      var body=document.getElementById('standingsBody'); body.innerHTML='';
-      var q=(document.getElementById('searchTeam').value||'').toLowerCase();
-      var rows=computeStandingsAuth().filter(function(t){return t.name.toLowerCase().includes(q)});
-      for(var i=0;i<rows.length;i++){
-        var t=rows[i];
-        var tr=document.createElement('tr');
-        tr.innerHTML='<td class="rank">'+(i+1)+'</td>'+
-          '<td><div class="team"><div class="badge" style="background:'+t.color+'">'+t.id+'</div><strong>'+t.name+'</strong></div></td>'+
-          '<td>'+t.MJ+'</td><td>'+t.KILLS+'</td><td>'+t.BONUS+'</td><td><strong>'+t.Pts+'</strong></td>';
-        body.appendChild(tr);
-      }
-      document.getElementById('seasonLabel').textContent='Saison '+state.season;
-      document.getElementById('lastUpdate').textContent='Dernière mise à jour — '+fmtDate(state.updatedAt);
-    }
-
-    // --- JOURNÉES ---
-    function renderFixtures(){
-      var list=document.getElementById('journeesList'); if(!list) return; list.innerHTML='';
-      var byDate=[].concat(state.journees||[]).sort(function(a,b){return new Date(a.date)-new Date(b.date)});
-      for(var k=0;k<byDate.length;k++){
-        var j=byDate[k]; var box=document.createElement('div'); box.className='match';
-        var ex=(j.exempts||[]).join(', ')||'—'; var cnt=(j.entries||[]).length;
-        box.innerHTML='<div><div class="when">'+fmtDate(j.date)+'</div><div class="tag">'+(j.label||'Journée')+'</div></div>'+
-                       '<div class="tag">Exempt: '+ex+'</div>'+
-                       '<div class="tag">'+cnt+' résultats</div>';
-        list.appendChild(box);
-      }
-    }
-
-    // --- CALENDRIER ---
-    var showOnlyUpcoming=false;
-    function renderCalendar(){
-      var wrap=document.getElementById('calendarWrap'); if(!wrap) return; wrap.innerHTML='';
-      var items=[].concat(state.events||[]).sort(function(a,b){return (a.j-b.j)||String(a.grp).localeCompare(String(b.grp))});
-      if(showOnlyUpcoming) items = items.filter(function(e){return !e.played});
-      if(!items.length){ wrap.innerHTML='<div class="muted">Aucune rencontre.</div>'; return; }
-      var currentJ=null;
-      for(var i=0;i<items.length;i++){
-        var ev=items[i];
-        if(currentJ!==ev.j){ currentJ=ev.j; var h=document.createElement('h4'); h.textContent='Journée '+currentJ; h.style.margin='10px 0 6px'; wrap.appendChild(h); }
-        var card=document.createElement('div'); card.className='eventcard'+(ev.played?' played':'');
-        var lineup=(ev.players||[]).join(', ');
-        card.innerHTML='<div><div><strong>'+ev.title+(ev.grp?' ('+ev.grp+')':'')+'</strong></div>'+
-                       '<div class="eventmeta">'+(lineup||'')+'</div></div>'+
-                       '<div><span class="tag">'+(ev.played?'Jouée':'À jouer')+'</span></div>';
-        (function(ref){ card.addEventListener('click', function(){ ref.played=!ref.played; saveState(); }); })(ev);
-        wrap.appendChild(card);
-      }
-    }
-
-    // --- JOUEURS ---
-    function renderPlayers(){
-      var grid=document.getElementById('playersGrid'); if(!grid) return; grid.innerHTML='';
-      for(var i=0;i<(state.players||[]).length;i++){
-        var p=state.players[i];
-        var el=document.createElement('div'); el.className='teamcard';
-        el.innerHTML='<div class="team">'+
-          '<div class="badge" style="background:'+ (p.color||'#6dd3ff') +'">'+p.id+'</div>'+
-          '<div><h4>'+p.name+'</h4><div class="muted">ID: '+p.id+'</div></div>'+
-          '</div>';
-        grid.appendChild(el);
-      }
-    }
-
-    // --- HELPERS ---
-    function nextJourneeId(){
-      var ids=(state.journees||[]).map(function(j){ return Number(j.id)||0; });
-      var maxId=ids.reduce(function(a,b){ return Math.max(a,b); }, 0);
-      return maxId+1;
-    }
-
-    // --- CRUD / IMPORT-EXPORT ---
-    function addJournee(){
-      var label = prompt('Label de la journée (ex: J1)')||'';
-      var date = prompt('Date ISO (ex: 2025-08-17T20:30:00)', new Date().toISOString().slice(0,16))||new Date().toISOString();
-      var ex = prompt('IDs des 3 exemptés séparés par des virgules (ex: NAS,OKA,ADJ)', '')||'';
-      var exempts = ex.toUpperCase().split(',').map(function(s){return s.trim()}).filter(Boolean);
-      var id = nextJourneeId();
-      state.journees.push({ id:id, date:date, label:label, entries:[], exempts:exempts });
-      saveState();
-    }
-
-    function addEntry(){
-      if(!(state.journees||[]).length){ alert('Ajoute d\'abord une journée.'); return; }
-      var jid = Number(prompt('ID de la journée (ex: 1)'))||0; var j = (state.journees||[]).find(function(x){return x.id===jid}); if(!j){ alert('Journée introuvable'); return; }
-      var pid = (prompt('ID joueur (ex: MEH)')||'').toUpperCase(); if(!playerById(pid)){ alert('Joueur inconnu'); return; }
-      var kills = Number(prompt('Kills cumulés (5 manches) — mets 0 si inconnu', '0')); if(!Number.isFinite(kills)){ alert('Nombre invalide'); return; }
-      var bonus = Number(prompt('Bonus EXACT (comme dans Excel) — 0 si non applicable', '0')); if(!Number.isFinite(bonus)){ alert('Nombre invalide'); return; }
-      var rank  = Number(prompt('Rang (1-4) — laisse vide si non applicable', ''));
-      var points = Number(prompt('Points EXACTS (comme Excel). Laisse vide pour calcul: kills+bonus', ''));
-      var exist = (j.entries||[]).find(function(e){return e.player===pid});
-      var payload = { player:pid, kills:kills, bonus: Number.isFinite(bonus)?bonus:0, rank: Number.isFinite(rank)?rank:0, points: Number.isFinite(points)?points:undefined };
-      if(exist){ for(var k in payload){ exist[k]=payload[k]; } } else { j.entries.push(payload); }
-      saveState();
-    }
-
-    function mergeJourneesPlus(oldList, newList){
-      var byId = new Map((oldList||[]).map(function(j){return [j.id, { id:j.id, date:j.date, label:j.label, exempts:[].concat(j.exempts||[]), entries:[].concat(j.entries||[]) }]}));
-      for(var i=0;i<(newList||[]).length;i++){
-        var nj=newList[i]; var cur=byId.get(nj.id)||{ id:nj.id, date:nj.date||new Date().toISOString(), label:nj.label||('J'+nj.id), entries:[], exempts:[] };
-        if(Array.isArray(nj.exempts)) cur.exempts = nj.exempts.map(function(x){return String(x).toUpperCase()});
-        if(Array.isArray(nj.entries)){
-          var idx = new Map((cur.entries||[]).map(function(e,ii){return [e.player,ii]}));
-          for(var t=0;t<nj.entries.length;t++){
-            var e=nj.entries[t];
-            var u={ player:String(e.player||'').toUpperCase(),
-                    kills: Number.isFinite(e.kills)? Number(e.kills): 0,
-                    rank:  Number.isFinite(e.rank)?  Number(e.rank): 0,
-                    bonus: Number.isFinite(e.bonus)? Number(e.bonus): (Number.isFinite(e.rank)? ({1:60,2:40,3:20,4:10}[e.rank]||0): undefined),
-                    points:Number.isFinite(e.points)? Number(e.points): undefined };
-            if(idx.has(u.player)) cur.entries[idx.get(u.player)] = Object.assign({}, cur.entries[idx.get(u.player)], u);
-            else cur.entries.push(u);
-          }
-        }
-        byId.set(nj.id, cur);
-      }
-      return Array.from(byId.values()).sort(function(a,b){return a.id-b.id});
-    }
-
-    function mergeEvents(oldE, newE){
-      var key=function(ev){ return (ev.j||ev.day||ev.journee)+'-'+String(ev.grp||ev.group||'').toUpperCase(); };
-      var norm=function(ev){ return { id: ev.id || (Date.now()+Math.random()), j: ev.j||ev.day||ev.journee, grp: String(ev.grp||ev.group||'').toUpperCase(), date: ev.date||new Date().toISOString(), title: ev.title||('J'+(ev.j||ev.day||ev.journee)+' – Groupe '+(ev.grp||ev.group||'')), players: ev.players||[], played: !!ev.played }; };
-      var map = new Map((oldE||[]).map(function(e){return [key(e),e]}));
-      for(var i=0;i<(newE||[]).length;i++){ var e=newE[i]; map.set(key(e), norm(e)); }
-      return Array.from(map.values()).sort(function(a,b){ return (a.j-b.j)||String(a.grp).localeCompare(String(b.grp)); });
-    }
-
-    function exportJSON(){
-      var data = JSON.stringify(state, null, 2);
-      var blob = new Blob([data], {type:'application/json'});
-      var url = URL.createObjectURL(blob);
-      var a = document.createElement('a'); a.href=url; a.download='ligue-warzone-s'+state.season+'.json'; a.click(); URL.revokeObjectURL(url);
-    }
-    function importJSON(file){
-      var reader = new FileReader();
-      reader.onload = function(){
-        try{
-          var obj = JSON.parse(reader.result);
-          if(obj.players) state.players = obj.players;
-          if(obj.journees) state.journees = mergeJourneesPlus(state.journees, obj.journees);
-          if(obj.events) state.events = mergeEvents(state.events, obj.events);
-          saveState(); alert('Import réussi.');
-        }catch(e){ alert('Import échoué : '+e.message); }
-      };
-      reader.readAsText(file);
-    }
-
-    // --- RENDER ROOT ---
-    function render(){ renderStandings(); renderFixtures(); renderCalendar(); renderPlayers(); }
-
-    // --- ÉCOUTEURS ---
-    document.querySelectorAll('.tab').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('active')});
-        btn.classList.add('active');
-        var id = btn.getAttribute('data-tab');
-        document.querySelectorAll('section[role="tabpanel"]').forEach(function(s){ s.hidden = (s.id!==id); });
-      })
-    })
-    var searchEl=document.getElementById('searchTeam'); if(searchEl) searchEl.addEventListener('input', renderStandings);
-    var btnAJ=document.getElementById('addJournee'); if(btnAJ) btnAJ.addEventListener('click', addJournee);
-    var btnAE=document.getElementById('addEntry'); if(btnAE) btnAE.addEventListener('click', addEntry);
-    var btnEX=document.getElementById('exportJSON'); if(btnEX) btnEX.addEventListener('click', exportJSON);
-    var btnIB=document.getElementById('importBtn'); if(btnIB) btnIB.addEventListener('click', function(){ document.getElementById('importJSON').click(); });
-    var inpIJ=document.getElementById('importJSON'); if(inpIJ) inpIJ.addEventListener('change', function(e){ if(e.target.files[0]) importJSON(e.target.files[0]); });
-    var tog=document.getElementById('togglePlayedView'); if(tog) tog.addEventListener('click', function(){ showOnlyUpcoming=!showOnlyUpcoming; renderCalendar(); });
-    var addEv=document.getElementById('addEvent'); if(addEv) addEv.addEventListener('click', function(){
-      var j = Number(prompt('Numéro de journée (ex: 6)'))||0; if(!j){return;}
-      var g = (prompt('Groupe (A/B/C)', 'A')||'').toUpperCase(); if(!g){return;}
-      var title = 'J'+j+' – Groupe '+g;
-      var players = (prompt('Joueurs (séparés par des virgules)')||'');
-      var arr = players.split(',').map(function(s){return s.trim()}).filter(Boolean);
-      var id = Date.now();
-      state.events.push({ id:id, j:j, grp:g, title:title, players:arr, played:false, date:new Date().toISOString() });
-      saveState();
+/* ---------- CALENDRIER ---------- */
+function renderCalendar(){
+  const wrap = byId('calwrap');
+  if(!state.calendar?.length){ wrap.innerHTML = '<div class="muted">Aucune journée.</div>'; return; }
+  const days = [...state.calendar].sort((a,b)=> a.journee - b.journee);
+  wrap.innerHTML = days.map(d => `
+    <div class="event ${d.played ? 'played' : ''}" data-j="${d.journee}">
+      <div class="title"><strong>Journée ${d.journee}</strong></div>
+      <div class="muted">Exemptés : ${d.exemptes.join(', ')||'—'}</div>
+      <div style="margin-top:6px">${d.matches.map(m => `• ${m.join(', ')}`).join('<br/>')}</div>
+      <div class="muted" style="margin-top:6px">${d.played ? 'Jouée' : 'À jouer'}</div>
+    </div>
+  `).join('');
+  wrap.querySelectorAll('.event').forEach(card=>{
+    card.addEventListener('click', () => {
+      const j = Number(card.getAttribute('data-j'));
+      const d = state.calendar.find(x => x.journee === j);
+      if(!d) return;
+      d.played = !d.played;
+      renderCalendar();
+      alert(`Journée ${j} marquée ${d.played ? 'jouée' : 'non jouée'} (modifie calendar_warzone.json pour sauvegarder).`);
     });
+  });
+}
 
-    // --- SELF-TESTS (console) ---
-    function runSelfTests(){
-      try{
-        // T1: standings length
-        var table=computeStandingsAuth(); console.assert(Array.isArray(table)&&table.length===(state.players||[]).length,'T1 standings length');
-        // T2: bonus & points Excel priorité
-        var snap=JSON.parse(JSON.stringify(state)); var pid=state.players[0].id; var jid=777;
-        state.journees.push({id:jid,label:'TEST',date:new Date().toISOString(),exempts:[],entries:[{player:pid,kills:10,rank:1,bonus:60,points:123}]});
-        var row=computeStandingsAuth().find(function(r){return r.id===pid}); console.assert(row&&row.Pts>=123,'T2 points Excel pris en compte');
-        state.journees=snap.journees;
-        // T3: fallback kills+bonus
-        state.journees.push({id:jid+1,label:'TEST2',date:new Date().toISOString(),exempts:[],entries:[{player:pid,kills:7,rank:2}]});
-        var r2=computeStandingsAuth().find(function(r){return r.id===pid}); var ok3=(r2 && r2.Pts>= (row?row.Pts:0)); console.assert(ok3,'T3 fallback calc OK'); state.journees=snap.journees;
-        // T4: merge events preserves keys
-        var merged=mergeEvents([{j:1,grp:'A',title:'J1 – A',players:['X'],played:false}], [{j:1,grp:'A',title:'J1 – A (new)',players:['X','Y'],played:true}]);
-        console.assert(merged.find(function(e){return e.j===1&&e.grp==='A'&&e.played===true}), 'T4 merge events');
-        // T5: render calendar no crash
-        renderCalendar();
-        // T6: nextJourneeId == max+1
-        var snap2=JSON.parse(JSON.stringify(state)); state.journees=[{id:1},{id:4},{id:3}]; var nid=nextJourneeId(); console.assert(nid===5,'T6 nextJourneeId'); state.journees=snap2.journees;
-        console.log('%cSelf-tests OK','color:#6dd3ff');
-      }catch(e){ console.warn('Self-tests:', e); }
-    }
+/* ---------- INIT ---------- */
+async function boot(){
+  try{
+    const [standingsRes, calRes] = await Promise.all([
+      fetch(STANDINGS_URL, {cache:'no-store'}),
+      fetch(CALENDAR_URL,  {cache:'no-store'})
+    ]);
+    const standings = await standingsRes.json();
+    const cal = await calRes.json();
+    state.season   = standings.season || 1;
+    state.updatedAt= new Date().toISOString();
+    state.players  = standings.players || [];
+    state.journees = standings.journees || [];
+    state.calendar = cal.calendar || [];
+    renderStandings();
+    renderCalendar();
+  }catch(e){
+    console.error(e);
+    byId('tbody').innerHTML = '<tr><td colspan="6">Erreur de chargement des données.</td></tr>';
+  }
+}
 
-    // --- INIT ---
-    render();
-    fetchRemote();
-    runSelfTests();
-  </script>
+/* ---------- UI ---------- */
+document.querySelectorAll('.tab').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const id = btn.getAttribute('data-tab');
+    document.querySelectorAll('section[role="tabpanel"]').forEach(s=> s.hidden = (s.id!==id));
+  });
+});
+byId('search').addEventListener('input', renderStandings);
+byId('togglePlayed').addEventListener('click', ()=>{
+  const j = Number(prompt('Numéro de journée à basculer ?'));
+  const d = state.calendar.find(x => x.journee===j);
+  if(!d) return;
+  d.played = !d.played;
+  renderCalendar();
+});
+
+/* ---------- GO ---------- */
+boot();
+</script>
 </body>
 </html>

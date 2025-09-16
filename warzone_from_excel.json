@@ -1,0 +1,3811 @@
+{
+  "journees": [
+    {
+      "id": 1,
+      "label": "J1",
+      "date": "2025-03-13T20:30:00",
+      "exempts": [
+        "MIK",
+        "SOF",
+        "THE"
+      ],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 58,
+          "rank": 0,
+          "bonus": null,
+          "points": 78
+        },
+        {
+          "player": "MIK",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 51
+        },
+        {
+          "player": "FLO",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 29
+        },
+        {
+          "player": "YOU",
+          "kills": 19,
+          "rank": 0,
+          "bonus": null,
+          "points": 22
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 58,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 41,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 24,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SAL",
+          "kills": 0,
+          "rank": 19,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "MOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "J2",
+      "date": "2025-03-14T20:30:00",
+      "exempts": [
+        "OKA",
+        "SAL",
+        "SOU"
+      ],
+      "entries": [
+        {
+          "player": "FLO",
+          "kills": 61,
+          "rank": 0,
+          "bonus": null,
+          "points": 76
+        },
+        {
+          "player": "SOU",
+          "kills": 39,
+          "rank": 0,
+          "bonus": null,
+          "points": 59
+        },
+        {
+          "player": "MEH",
+          "kills": 58,
+          "rank": 0,
+          "bonus": null,
+          "points": 48
+        },
+        {
+          "player": "DAN",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 29
+        },
+        {
+          "player": "YOU",
+          "kills": 19,
+          "rank": 0,
+          "bonus": null,
+          "points": 22
+        },
+        {
+          "player": "MIK",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 21
+        },
+        {
+          "player": "MOU",
+          "kills": 17,
+          "rank": 0,
+          "bonus": null,
+          "points": 20
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 37,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 24,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 39,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 17,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SAL",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "J3",
+      "date": "2025-03-15T20:30:00",
+      "exempts": [
+        "MDM",
+        "NAS",
+        "YOU"
+      ],
+      "entries": [
+        {
+          "player": "SOU",
+          "kills": 63,
+          "rank": 0,
+          "bonus": null,
+          "points": 88
+        },
+        {
+          "player": "FLO",
+          "kills": 61,
+          "rank": 0,
+          "bonus": null,
+          "points": 76
+        },
+        {
+          "player": "DAN",
+          "kills": 48,
+          "rank": 0,
+          "bonus": null,
+          "points": 63
+        },
+        {
+          "player": "SAL",
+          "kills": 42,
+          "rank": 0,
+          "bonus": null,
+          "points": 62
+        },
+        {
+          "player": "MEH",
+          "kills": 58,
+          "rank": 0,
+          "bonus": null,
+          "points": 48
+        },
+        {
+          "player": "YOU",
+          "kills": 40,
+          "rank": 0,
+          "bonus": null,
+          "points": 46
+        },
+        {
+          "player": "MIK",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 21
+        },
+        {
+          "player": "MOU",
+          "kills": 17,
+          "rank": 0,
+          "bonus": null,
+          "points": 20
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 24,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 21,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 24,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 42,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "J4",
+      "date": "2025-03-15T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 121
+        },
+        {
+          "player": "SAL",
+          "kills": 78,
+          "rank": 0,
+          "bonus": null,
+          "points": 108
+        },
+        {
+          "player": "SOU",
+          "kills": 63,
+          "rank": 0,
+          "bonus": null,
+          "points": 88
+        },
+        {
+          "player": "ALI",
+          "kills": 66,
+          "rank": 0,
+          "bonus": null,
+          "points": 86
+        },
+        {
+          "player": "FLO",
+          "kills": 61,
+          "rank": 0,
+          "bonus": null,
+          "points": 76
+        },
+        {
+          "player": "OKA",
+          "kills": 57,
+          "rank": 0,
+          "bonus": null,
+          "points": 65
+        },
+        {
+          "player": "DAN",
+          "kills": 48,
+          "rank": 0,
+          "bonus": null,
+          "points": 63
+        },
+        {
+          "player": "MIK",
+          "kills": 78,
+          "rank": 0,
+          "bonus": null,
+          "points": 63
+        },
+        {
+          "player": "ADJ",
+          "kills": 47,
+          "rank": 66,
+          "bonus": null,
+          "points": 57
+        },
+        {
+          "player": "YOU",
+          "kills": 40,
+          "rank": 36,
+          "bonus": null,
+          "points": 46
+        },
+        {
+          "player": "MOU",
+          "kills": 17,
+          "rank": 36,
+          "bonus": null,
+          "points": 20
+        },
+        {
+          "player": "THE",
+          "kills": 20,
+          "rank": 20,
+          "bonus": null,
+          "points": 18
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "J5",
+      "date": "2025-03-16T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 171,
+          "rank": 0,
+          "bonus": null,
+          "points": 191
+        },
+        {
+          "player": "ALI",
+          "kills": 147,
+          "rank": 0,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "SAL",
+          "kills": 78,
+          "rank": 0,
+          "bonus": null,
+          "points": 108
+        },
+        {
+          "player": "MIK",
+          "kills": 117,
+          "rank": 0,
+          "bonus": null,
+          "points": 107
+        },
+        {
+          "player": "SOU",
+          "kills": 63,
+          "rank": 0,
+          "bonus": null,
+          "points": 88
+        },
+        {
+          "player": "FLO",
+          "kills": 61,
+          "rank": 0,
+          "bonus": null,
+          "points": 76
+        },
+        {
+          "player": "OKA",
+          "kills": 57,
+          "rank": 0,
+          "bonus": null,
+          "points": 65
+        },
+        {
+          "player": "DAN",
+          "kills": 48,
+          "rank": 0,
+          "bonus": null,
+          "points": 63
+        },
+        {
+          "player": "ADJ",
+          "kills": 47,
+          "rank": 81,
+          "bonus": null,
+          "points": 57
+        },
+        {
+          "player": "YOU",
+          "kills": 40,
+          "rank": 60,
+          "bonus": null,
+          "points": 46
+        },
+        {
+          "player": "KRM",
+          "kills": 38,
+          "rank": 39,
+          "bonus": null,
+          "points": 41
+        },
+        {
+          "player": "MOU",
+          "kills": 17,
+          "rank": 38,
+          "bonus": null,
+          "points": 20
+        },
+        {
+          "player": "THE",
+          "kills": 20,
+          "rank": 0,
+          "bonus": null,
+          "points": 18
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "J6",
+      "date": "2025-08-17T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MDM",
+          "kills": 30,
+          "rank": 0,
+          "bonus": null,
+          "points": 90
+        },
+        {
+          "player": "SAL",
+          "kills": 27,
+          "rank": 0,
+          "bonus": null,
+          "points": 67
+        },
+        {
+          "player": "OKA",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "YOU",
+          "kills": 18,
+          "rank": 0,
+          "bonus": null,
+          "points": 28
+        },
+        {
+          "player": "MEH",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 27,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 30,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 24,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 18,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "J7",
+      "date": "2025-08-17T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 72,
+          "rank": 0,
+          "bonus": null,
+          "points": 132
+        },
+        {
+          "player": "ALI",
+          "kills": 69,
+          "rank": 0,
+          "bonus": null,
+          "points": 109
+        },
+        {
+          "player": "MDM",
+          "kills": 30,
+          "rank": 0,
+          "bonus": null,
+          "points": 90
+        },
+        {
+          "player": "SAL",
+          "kills": 27,
+          "rank": 0,
+          "bonus": null,
+          "points": 67
+        },
+        {
+          "player": "YOU",
+          "kills": 40,
+          "rank": 0,
+          "bonus": null,
+          "points": 50
+        },
+        {
+          "player": "OKA",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "SOU",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 69,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 72,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 24,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 12,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "J8",
+      "date": "2025-08-18T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 142,
+          "rank": 0,
+          "bonus": null,
+          "points": 242
+        },
+        {
+          "player": "ALI",
+          "kills": 141,
+          "rank": 0,
+          "bonus": null,
+          "points": 241
+        },
+        {
+          "player": "SAL",
+          "kills": 76,
+          "rank": 0,
+          "bonus": null,
+          "points": 126
+        },
+        {
+          "player": "MDM",
+          "kills": 30,
+          "rank": 0,
+          "bonus": null,
+          "points": 90
+        },
+        {
+          "player": "ADJ",
+          "kills": 61,
+          "rank": 0,
+          "bonus": null,
+          "points": 81
+        },
+        {
+          "player": "YOU",
+          "kills": 40,
+          "rank": 0,
+          "bonus": null,
+          "points": 50
+        },
+        {
+          "player": "OKA",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "SOU",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 72,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 70,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 61,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 49,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "J9",
+      "date": "2025-08-18T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 142,
+          "rank": 0,
+          "bonus": null,
+          "points": 242
+        },
+        {
+          "player": "ALI",
+          "kills": 141,
+          "rank": 0,
+          "bonus": null,
+          "points": 241
+        },
+        {
+          "player": "MDM",
+          "kills": 65,
+          "rank": 0,
+          "bonus": null,
+          "points": 165
+        },
+        {
+          "player": "SAL",
+          "kills": 76,
+          "rank": 0,
+          "bonus": null,
+          "points": 126
+        },
+        {
+          "player": "ERI",
+          "kills": 36,
+          "rank": 0,
+          "bonus": null,
+          "points": 96
+        },
+        {
+          "player": "OKA",
+          "kills": 49,
+          "rank": 0,
+          "bonus": null,
+          "points": 89
+        },
+        {
+          "player": "ADJ",
+          "kills": 61,
+          "rank": 0,
+          "bonus": null,
+          "points": 81
+        },
+        {
+          "player": "YOU",
+          "kills": 40,
+          "rank": 0,
+          "bonus": null,
+          "points": 50
+        },
+        {
+          "player": "SOU",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "DAN",
+          "kills": 21,
+          "rank": 0,
+          "bonus": null,
+          "points": 31
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 25,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 36,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 21,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 35,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "J10",
+      "date": "2025-08-18T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 142,
+          "rank": 0,
+          "bonus": null,
+          "points": 242
+        },
+        {
+          "player": "ALI",
+          "kills": 141,
+          "rank": 0,
+          "bonus": null,
+          "points": 241
+        },
+        {
+          "player": "SAL",
+          "kills": 105,
+          "rank": 0,
+          "bonus": null,
+          "points": 215
+        },
+        {
+          "player": "MDM",
+          "kills": 65,
+          "rank": 0,
+          "bonus": null,
+          "points": 165
+        },
+        {
+          "player": "ERI",
+          "kills": 57,
+          "rank": 0,
+          "bonus": null,
+          "points": 157
+        },
+        {
+          "player": "OKA",
+          "kills": 67,
+          "rank": 0,
+          "bonus": null,
+          "points": 127
+        },
+        {
+          "player": "ADJ",
+          "kills": 61,
+          "rank": 0,
+          "bonus": null,
+          "points": 81
+        },
+        {
+          "player": "DAN",
+          "kills": 35,
+          "rank": 0,
+          "bonus": null,
+          "points": 55
+        },
+        {
+          "player": "YOU",
+          "kills": 40,
+          "rank": 0,
+          "bonus": null,
+          "points": 50
+        },
+        {
+          "player": "SOU",
+          "kills": 24,
+          "rank": 0,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 18,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 29,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 21,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 14,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "J11",
+      "date": "2025-08-18T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "SAL",
+          "kills": 156,
+          "rank": 0,
+          "bonus": null,
+          "points": 286
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "MEH",
+          "kills": 142,
+          "rank": 0,
+          "bonus": null,
+          "points": 242
+        },
+        {
+          "player": "ALI",
+          "kills": 141,
+          "rank": 0,
+          "bonus": null,
+          "points": 241
+        },
+        {
+          "player": "MDM",
+          "kills": 102,
+          "rank": 0,
+          "bonus": null,
+          "points": 212
+        },
+        {
+          "player": "SOF",
+          "kills": 77,
+          "rank": 0,
+          "bonus": null,
+          "points": 137
+        },
+        {
+          "player": "OKA",
+          "kills": 67,
+          "rank": 0,
+          "bonus": null,
+          "points": 127
+        },
+        {
+          "player": "ADJ",
+          "kills": 61,
+          "rank": 0,
+          "bonus": null,
+          "points": 81
+        },
+        {
+          "player": "DAN",
+          "kills": 35,
+          "rank": 0,
+          "bonus": null,
+          "points": 55
+        },
+        {
+          "player": "YOU",
+          "kills": 40,
+          "rank": 0,
+          "bonus": null,
+          "points": 50
+        },
+        {
+          "player": "SOU",
+          "kills": 24,
+          "rank": 77,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 51,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 54,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 37,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "J12",
+      "date": "2025-08-18T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "SAL",
+          "kills": 156,
+          "rank": 0,
+          "bonus": null,
+          "points": 286
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "MEH",
+          "kills": 142,
+          "rank": 0,
+          "bonus": null,
+          "points": 242
+        },
+        {
+          "player": "ALI",
+          "kills": 141,
+          "rank": 0,
+          "bonus": null,
+          "points": 241
+        },
+        {
+          "player": "MDM",
+          "kills": 102,
+          "rank": 0,
+          "bonus": null,
+          "points": 212
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 0,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "SOF",
+          "kills": 77,
+          "rank": 0,
+          "bonus": null,
+          "points": 137
+        },
+        {
+          "player": "OKA",
+          "kills": 67,
+          "rank": 0,
+          "bonus": null,
+          "points": 127
+        },
+        {
+          "player": "DAN",
+          "kills": 56,
+          "rank": 0,
+          "bonus": null,
+          "points": 96
+        },
+        {
+          "player": "YOU",
+          "kills": 56,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        },
+        {
+          "player": "MIK",
+          "kills": 34,
+          "rank": 46,
+          "bonus": null,
+          "points": 74
+        },
+        {
+          "player": "SOU",
+          "kills": 24,
+          "rank": 16,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 34,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 21,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "label": "J13",
+      "date": "2025-08-18T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 225,
+          "rank": 0,
+          "bonus": null,
+          "points": 385
+        },
+        {
+          "player": "SAL",
+          "kills": 156,
+          "rank": 0,
+          "bonus": null,
+          "points": 286
+        },
+        {
+          "player": "MDM",
+          "kills": 126,
+          "rank": 0,
+          "bonus": null,
+          "points": 256
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "ALI",
+          "kills": 141,
+          "rank": 0,
+          "bonus": null,
+          "points": 241
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 0,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "MIK",
+          "kills": 73,
+          "rank": 0,
+          "bonus": null,
+          "points": 153
+        },
+        {
+          "player": "SOF",
+          "kills": 77,
+          "rank": 0,
+          "bonus": null,
+          "points": 137
+        },
+        {
+          "player": "OKA",
+          "kills": 67,
+          "rank": 0,
+          "bonus": null,
+          "points": 127
+        },
+        {
+          "player": "DAN",
+          "kills": 72,
+          "rank": 0,
+          "bonus": null,
+          "points": 122
+        },
+        {
+          "player": "YOU",
+          "kills": 56,
+          "rank": 83,
+          "bonus": null,
+          "points": 91
+        },
+        {
+          "player": "SOU",
+          "kills": 24,
+          "rank": 39,
+          "bonus": null,
+          "points": 44
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 24,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 16,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "label": "J14",
+      "date": "2025-08-19T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 225,
+          "rank": 0,
+          "bonus": null,
+          "points": 385
+        },
+        {
+          "player": "SAL",
+          "kills": 156,
+          "rank": 0,
+          "bonus": null,
+          "points": 286
+        },
+        {
+          "player": "SOF",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 263
+        },
+        {
+          "player": "MDM",
+          "kills": 126,
+          "rank": 0,
+          "bonus": null,
+          "points": 256
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "ALI",
+          "kills": 141,
+          "rank": 0,
+          "bonus": null,
+          "points": 241
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 0,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "OKA",
+          "kills": 101,
+          "rank": 0,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "MIK",
+          "kills": 73,
+          "rank": 0,
+          "bonus": null,
+          "points": 153
+        },
+        {
+          "player": "DAN",
+          "kills": 72,
+          "rank": 0,
+          "bonus": null,
+          "points": 122
+        },
+        {
+          "player": "YOU",
+          "kills": 76,
+          "rank": 34,
+          "bonus": null,
+          "points": 121
+        },
+        {
+          "player": "SOU",
+          "kills": 58,
+          "rank": 66,
+          "bonus": null,
+          "points": 118
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 34,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 20,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "label": "J15",
+      "date": "2025-08-19T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 225,
+          "rank": 0,
+          "bonus": null,
+          "points": 385
+        },
+        {
+          "player": "ALI",
+          "kills": 211,
+          "rank": 0,
+          "bonus": null,
+          "points": 371
+        },
+        {
+          "player": "SAL",
+          "kills": 156,
+          "rank": 0,
+          "bonus": null,
+          "points": 286
+        },
+        {
+          "player": "SOF",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 263
+        },
+        {
+          "player": "MDM",
+          "kills": 126,
+          "rank": 0,
+          "bonus": null,
+          "points": 256
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "MIK",
+          "kills": 115,
+          "rank": 0,
+          "bonus": null,
+          "points": 235
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 0,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "OKA",
+          "kills": 101,
+          "rank": 0,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "DAN",
+          "kills": 97,
+          "rank": 0,
+          "bonus": null,
+          "points": 167
+        },
+        {
+          "player": "YOU",
+          "kills": 95,
+          "rank": 70,
+          "bonus": null,
+          "points": 150
+        },
+        {
+          "player": "SOU",
+          "kills": 58,
+          "rank": 42,
+          "bonus": null,
+          "points": 118
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 25,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 19,
+          "bonus": null,
+          "points": 0
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "label": "J16",
+      "date": "2025-08-22T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 225,
+          "rank": 0,
+          "bonus": null,
+          "points": 385
+        },
+        {
+          "player": "ALI",
+          "kills": 211,
+          "rank": 0,
+          "bonus": null,
+          "points": 371
+        },
+        {
+          "player": "SAL",
+          "kills": 156,
+          "rank": 0,
+          "bonus": null,
+          "points": 286
+        },
+        {
+          "player": "SOF",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 263
+        },
+        {
+          "player": "MDM",
+          "kills": 126,
+          "rank": 0,
+          "bonus": null,
+          "points": 256
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "MIK",
+          "kills": 115,
+          "rank": 0,
+          "bonus": null,
+          "points": 235
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 0,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 0,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "OKA",
+          "kills": 101,
+          "rank": 0,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 35,
+          "bonus": null,
+          "points": 171
+        },
+        {
+          "player": "DAN",
+          "kills": 97,
+          "rank": 20,
+          "bonus": null,
+          "points": 167
+        },
+        {
+          "player": "NAS",
+          "kills": 20,
+          "rank": 20,
+          "bonus": null,
+          "points": 60
+        },
+        {
+          "player": "THE",
+          "kills": 20,
+          "rank": 11,
+          "bonus": null,
+          "points": 40
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "label": "J17",
+      "date": "2025-08-22T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "ALI",
+          "kills": 269,
+          "rank": 0,
+          "bonus": null,
+          "points": 489
+        },
+        {
+          "player": "MEH",
+          "kills": 225,
+          "rank": 0,
+          "bonus": null,
+          "points": 385
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "SAL",
+          "kills": 198,
+          "rank": 0,
+          "bonus": null,
+          "points": 348
+        },
+        {
+          "player": "MDM",
+          "kills": 157,
+          "rank": 0,
+          "bonus": null,
+          "points": 297
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "MIK",
+          "kills": 115,
+          "rank": 0,
+          "bonus": null,
+          "points": 235
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 0,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 0,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "OKA",
+          "kills": 101,
+          "rank": 0,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 58,
+          "bonus": null,
+          "points": 171
+        },
+        {
+          "player": "DAN",
+          "kills": 97,
+          "rank": 47,
+          "bonus": null,
+          "points": 167
+        },
+        {
+          "player": "NAS",
+          "kills": 20,
+          "rank": 42,
+          "bonus": null,
+          "points": 60
+        },
+        {
+          "player": "THE",
+          "kills": 20,
+          "rank": 31,
+          "bonus": null,
+          "points": 40
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "label": "J18",
+      "date": "2025-08-23T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "ALI",
+          "kills": 269,
+          "rank": 0,
+          "bonus": null,
+          "points": 489
+        },
+        {
+          "player": "MEH",
+          "kills": 260,
+          "rank": 0,
+          "bonus": null,
+          "points": 480
+        },
+        {
+          "player": "SAL",
+          "kills": 214,
+          "rank": 0,
+          "bonus": null,
+          "points": 374
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "MDM",
+          "kills": 175,
+          "rank": 0,
+          "bonus": null,
+          "points": 335
+        },
+        {
+          "player": "MIK",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 303
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 0,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 0,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "OKA",
+          "kills": 101,
+          "rank": 0,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 35,
+          "bonus": null,
+          "points": 171
+        },
+        {
+          "player": "DAN",
+          "kills": 97,
+          "rank": 28,
+          "bonus": null,
+          "points": 167
+        },
+        {
+          "player": "NAS",
+          "kills": 20,
+          "rank": 16,
+          "bonus": null,
+          "points": 60
+        },
+        {
+          "player": "THE",
+          "kills": 20,
+          "rank": 18,
+          "bonus": null,
+          "points": 40
+        },
+        {
+          "player": "KRM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "label": "J19",
+      "date": "2025-08-23T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "ALI",
+          "kills": 269,
+          "rank": 0,
+          "bonus": null,
+          "points": 489
+        },
+        {
+          "player": "MEH",
+          "kills": 260,
+          "rank": 0,
+          "bonus": null,
+          "points": 480
+        },
+        {
+          "player": "SAL",
+          "kills": 214,
+          "rank": 0,
+          "bonus": null,
+          "points": 374
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "MDM",
+          "kills": 175,
+          "rank": 0,
+          "bonus": null,
+          "points": 335
+        },
+        {
+          "player": "MIK",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 303
+        },
+        {
+          "player": "ERI",
+          "kills": 111,
+          "rank": 0,
+          "bonus": null,
+          "points": 251
+        },
+        {
+          "player": "DAN",
+          "kills": 124,
+          "rank": 0,
+          "bonus": null,
+          "points": 234
+        },
+        {
+          "player": "OKA",
+          "kills": 123,
+          "rank": 0,
+          "bonus": null,
+          "points": 223
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 0,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 42,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 27,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "FLO",
+          "kills": 42,
+          "rank": 22,
+          "bonus": null,
+          "points": 102
+        },
+        {
+          "player": "NAS",
+          "kills": 20,
+          "rank": 0,
+          "bonus": null,
+          "points": 60
+        },
+        {
+          "player": "THE",
+          "kills": 20,
+          "rank": 0,
+          "bonus": null,
+          "points": 40
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "label": "J20",
+      "date": "2025-08-24T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "ALI",
+          "kills": 269,
+          "rank": 0,
+          "bonus": null,
+          "points": 489
+        },
+        {
+          "player": "MEH",
+          "kills": 260,
+          "rank": 0,
+          "bonus": null,
+          "points": 480
+        },
+        {
+          "player": "MDM",
+          "kills": 199,
+          "rank": 0,
+          "bonus": null,
+          "points": 379
+        },
+        {
+          "player": "SAL",
+          "kills": 214,
+          "rank": 0,
+          "bonus": null,
+          "points": 374
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "ERI",
+          "kills": 140,
+          "rank": 0,
+          "bonus": null,
+          "points": 320
+        },
+        {
+          "player": "MIK",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 303
+        },
+        {
+          "player": "DAN",
+          "kills": 124,
+          "rank": 0,
+          "bonus": null,
+          "points": 234
+        },
+        {
+          "player": "OKA",
+          "kills": 123,
+          "rank": 0,
+          "bonus": null,
+          "points": 223
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 0,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 30,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 29,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "THE",
+          "kills": 50,
+          "rank": 24,
+          "bonus": null,
+          "points": 130
+        },
+        {
+          "player": "FLO",
+          "kills": 42,
+          "rank": 21,
+          "bonus": null,
+          "points": 102
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "label": "J21",
+      "date": "2025-08-24T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 337,
+          "rank": 0,
+          "bonus": null,
+          "points": 617
+        },
+        {
+          "player": "ALI",
+          "kills": 269,
+          "rank": 0,
+          "bonus": null,
+          "points": 489
+        },
+        {
+          "player": "SAL",
+          "kills": 244,
+          "rank": 0,
+          "bonus": null,
+          "points": 424
+        },
+        {
+          "player": "MDM",
+          "kills": 228,
+          "rank": 0,
+          "bonus": null,
+          "points": 418
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "ERI",
+          "kills": 140,
+          "rank": 0,
+          "bonus": null,
+          "points": 320
+        },
+        {
+          "player": "MIK",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 303
+        },
+        {
+          "player": "DAN",
+          "kills": 124,
+          "rank": 0,
+          "bonus": null,
+          "points": 234
+        },
+        {
+          "player": "OKA",
+          "kills": 123,
+          "rank": 0,
+          "bonus": null,
+          "points": 223
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 0,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "THE",
+          "kills": 81,
+          "rank": 31,
+          "bonus": null,
+          "points": 201
+        },
+        {
+          "player": "ADJ",
+          "kills": 107,
+          "rank": 77,
+          "bonus": null,
+          "points": 187
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 29,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "FLO",
+          "kills": 42,
+          "rank": 30,
+          "bonus": null,
+          "points": 102
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "label": "J22",
+      "date": "2025-08-24T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "ALI",
+          "kills": 340,
+          "rank": 0,
+          "bonus": null,
+          "points": 620
+        },
+        {
+          "player": "MEH",
+          "kills": 337,
+          "rank": 0,
+          "bonus": null,
+          "points": 617
+        },
+        {
+          "player": "MDM",
+          "kills": 253,
+          "rank": 0,
+          "bonus": null,
+          "points": 463
+        },
+        {
+          "player": "SAL",
+          "kills": 244,
+          "rank": 0,
+          "bonus": null,
+          "points": 424
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "ERI",
+          "kills": 140,
+          "rank": 0,
+          "bonus": null,
+          "points": 320
+        },
+        {
+          "player": "MIK",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 303
+        },
+        {
+          "player": "ADJ",
+          "kills": 145,
+          "rank": 0,
+          "bonus": null,
+          "points": 265
+        },
+        {
+          "player": "DAN",
+          "kills": 135,
+          "rank": 0,
+          "bonus": null,
+          "points": 255
+        },
+        {
+          "player": "OKA",
+          "kills": 123,
+          "rank": 0,
+          "bonus": null,
+          "points": 223
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 71,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "THE",
+          "kills": 81,
+          "rank": 38,
+          "bonus": null,
+          "points": 201
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 25,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "FLO",
+          "kills": 42,
+          "rank": 11,
+          "bonus": null,
+          "points": 102
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "label": "J23",
+      "date": "2025-08-25T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 749
+        },
+        {
+          "player": "ALI",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 729
+        },
+        {
+          "player": "MDM",
+          "kills": 253,
+          "rank": 0,
+          "bonus": null,
+          "points": 463
+        },
+        {
+          "player": "SAL",
+          "kills": 244,
+          "rank": 0,
+          "bonus": null,
+          "points": 424
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "ADJ",
+          "kills": 186,
+          "rank": 0,
+          "bonus": null,
+          "points": 326
+        },
+        {
+          "player": "ERI",
+          "kills": 140,
+          "rank": 0,
+          "bonus": null,
+          "points": 320
+        },
+        {
+          "player": "MIK",
+          "kills": 143,
+          "rank": 0,
+          "bonus": null,
+          "points": 303
+        },
+        {
+          "player": "DAN",
+          "kills": 135,
+          "rank": 0,
+          "bonus": null,
+          "points": 255
+        },
+        {
+          "player": "OKA",
+          "kills": 123,
+          "rank": 0,
+          "bonus": null,
+          "points": 223
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 72,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "THE",
+          "kills": 81,
+          "rank": 69,
+          "bonus": null,
+          "points": 201
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 41,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "FLO",
+          "kills": 72,
+          "rank": 30,
+          "bonus": null,
+          "points": 142
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 41,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MEH",
+          "kills": 0,
+          "rank": 30,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MDM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SAL",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "YOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "FLO",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "label": "J24",
+      "date": "2025-08-25T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 749
+        },
+        {
+          "player": "ALI",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 729
+        },
+        {
+          "player": "SAL",
+          "kills": 286,
+          "rank": 0,
+          "bonus": null,
+          "points": 526
+        },
+        {
+          "player": "MDM",
+          "kills": 253,
+          "rank": 0,
+          "bonus": null,
+          "points": 463
+        },
+        {
+          "player": "ERI",
+          "kills": 175,
+          "rank": 0,
+          "bonus": null,
+          "points": 395
+        },
+        {
+          "player": "MIK",
+          "kills": 177,
+          "rank": 0,
+          "bonus": null,
+          "points": 357
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "ADJ",
+          "kills": 186,
+          "rank": 0,
+          "bonus": null,
+          "points": 326
+        },
+        {
+          "player": "DAN",
+          "kills": 148,
+          "rank": 0,
+          "bonus": null,
+          "points": 278
+        },
+        {
+          "player": "OKA",
+          "kills": 123,
+          "rank": 0,
+          "bonus": null,
+          "points": 223
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 42,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "THE",
+          "kills": 81,
+          "rank": 35,
+          "bonus": null,
+          "points": 201
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 34,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "FLO",
+          "kills": 72,
+          "rank": 13,
+          "bonus": null,
+          "points": 142
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 34,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MEH",
+          "kills": 0,
+          "rank": 13,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MDM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SAL",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "YOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "FLO",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "label": "J25",
+      "date": "2025-08-26T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 749
+        },
+        {
+          "player": "ALI",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 729
+        },
+        {
+          "player": "SAL",
+          "kills": 330,
+          "rank": 0,
+          "bonus": null,
+          "points": 590
+        },
+        {
+          "player": "MDM",
+          "kills": 253,
+          "rank": 0,
+          "bonus": null,
+          "points": 463
+        },
+        {
+          "player": "ADJ",
+          "kills": 249,
+          "rank": 0,
+          "bonus": null,
+          "points": 449
+        },
+        {
+          "player": "MIK",
+          "kills": 212,
+          "rank": 0,
+          "bonus": null,
+          "points": 402
+        },
+        {
+          "player": "ERI",
+          "kills": 175,
+          "rank": 0,
+          "bonus": null,
+          "points": 395
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "OKA",
+          "kills": 167,
+          "rank": 0,
+          "bonus": null,
+          "points": 307
+        },
+        {
+          "player": "DAN",
+          "kills": 148,
+          "rank": 0,
+          "bonus": null,
+          "points": 278
+        },
+        {
+          "player": "SOU",
+          "kills": 93,
+          "rank": 44,
+          "bonus": null,
+          "points": 213
+        },
+        {
+          "player": "THE",
+          "kills": 81,
+          "rank": 63,
+          "bonus": null,
+          "points": 201
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 35,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "FLO",
+          "kills": 72,
+          "rank": 44,
+          "bonus": null,
+          "points": 142
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 44,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MEH",
+          "kills": 0,
+          "rank": 35,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MDM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SAL",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "YOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "FLO",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "label": "J26",
+      "date": "2025-08-26T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 475,
+          "rank": 0,
+          "bonus": null,
+          "points": 875
+        },
+        {
+          "player": "ALI",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 729
+        },
+        {
+          "player": "SAL",
+          "kills": 330,
+          "rank": 0,
+          "bonus": null,
+          "points": 590
+        },
+        {
+          "player": "MDM",
+          "kills": 253,
+          "rank": 0,
+          "bonus": null,
+          "points": 463
+        },
+        {
+          "player": "ADJ",
+          "kills": 249,
+          "rank": 0,
+          "bonus": null,
+          "points": 449
+        },
+        {
+          "player": "MIK",
+          "kills": 212,
+          "rank": 0,
+          "bonus": null,
+          "points": 402
+        },
+        {
+          "player": "ERI",
+          "kills": 175,
+          "rank": 0,
+          "bonus": null,
+          "points": 395
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "OKA",
+          "kills": 200,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "THE",
+          "kills": 121,
+          "rank": 0,
+          "bonus": null,
+          "points": 281
+        },
+        {
+          "player": "DAN",
+          "kills": 148,
+          "rank": 66,
+          "bonus": null,
+          "points": 278
+        },
+        {
+          "player": "SOU",
+          "kills": 129,
+          "rank": 33,
+          "bonus": null,
+          "points": 269
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 36,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "FLO",
+          "kills": 72,
+          "rank": 40,
+          "bonus": null,
+          "points": 142
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 34,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MEH",
+          "kills": 0,
+          "rank": 13,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MDM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SAL",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "YOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "FLO",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "label": "J27",
+      "date": "2025-08-26T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 527,
+          "rank": 0,
+          "bonus": null,
+          "points": 987
+        },
+        {
+          "player": "ALI",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 729
+        },
+        {
+          "player": "SAL",
+          "kills": 359,
+          "rank": 0,
+          "bonus": null,
+          "points": 639
+        },
+        {
+          "player": "ERI",
+          "kills": 209,
+          "rank": 0,
+          "bonus": null,
+          "points": 469
+        },
+        {
+          "player": "MDM",
+          "kills": 253,
+          "rank": 0,
+          "bonus": null,
+          "points": 463
+        },
+        {
+          "player": "ADJ",
+          "kills": 249,
+          "rank": 0,
+          "bonus": null,
+          "points": 449
+        },
+        {
+          "player": "MIK",
+          "kills": 212,
+          "rank": 0,
+          "bonus": null,
+          "points": 402
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "OKA",
+          "kills": 200,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "SOU",
+          "kills": 148,
+          "rank": 0,
+          "bonus": null,
+          "points": 298
+        },
+        {
+          "player": "THE",
+          "kills": 121,
+          "rank": 52,
+          "bonus": null,
+          "points": 281
+        },
+        {
+          "player": "DAN",
+          "kills": 148,
+          "rank": 34,
+          "bonus": null,
+          "points": 278
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 29,
+          "bonus": null,
+          "points": 181
+        },
+        {
+          "player": "FLO",
+          "kills": 72,
+          "rank": 19,
+          "bonus": null,
+          "points": 142
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 34,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MEH",
+          "kills": 0,
+          "rank": 13,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MDM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SAL",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "YOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "FLO",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "label": "J28",
+      "date": "2025-08-27T20:30:00",
+      "exempts": [],
+      "entries": [
+        {
+          "player": "MEH",
+          "kills": 527,
+          "rank": 0,
+          "bonus": null,
+          "points": 987
+        },
+        {
+          "player": "ALI",
+          "kills": 409,
+          "rank": 0,
+          "bonus": null,
+          "points": 729
+        },
+        {
+          "player": "SAL",
+          "kills": 359,
+          "rank": 0,
+          "bonus": null,
+          "points": 639
+        },
+        {
+          "player": "ERI",
+          "kills": 248,
+          "rank": 0,
+          "bonus": null,
+          "points": 548
+        },
+        {
+          "player": "MDM",
+          "kills": 253,
+          "rank": 0,
+          "bonus": null,
+          "points": 463
+        },
+        {
+          "player": "ADJ",
+          "kills": 249,
+          "rank": 0,
+          "bonus": null,
+          "points": 449
+        },
+        {
+          "player": "MIK",
+          "kills": 212,
+          "rank": 0,
+          "bonus": null,
+          "points": 402
+        },
+        {
+          "player": "SOF",
+          "kills": 190,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "OKA",
+          "kills": 200,
+          "rank": 0,
+          "bonus": null,
+          "points": 350
+        },
+        {
+          "player": "THE",
+          "kills": 149,
+          "rank": 0,
+          "bonus": null,
+          "points": 329
+        },
+        {
+          "player": "SOU",
+          "kills": 148,
+          "rank": 51,
+          "bonus": null,
+          "points": 298
+        },
+        {
+          "player": "DAN",
+          "kills": 148,
+          "rank": 39,
+          "bonus": null,
+          "points": 278
+        },
+        {
+          "player": "FLO",
+          "kills": 123,
+          "rank": 28,
+          "bonus": null,
+          "points": 253
+        },
+        {
+          "player": "YOU",
+          "kills": 116,
+          "rank": 0,
+          "bonus": null,
+          "points": 191
+        },
+        {
+          "player": "NAS",
+          "kills": 41,
+          "rank": 0,
+          "bonus": null,
+          "points": 91
+        },
+        {
+          "player": "ALI",
+          "kills": 0,
+          "rank": 28,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MEH",
+          "kills": 0,
+          "rank": 10,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MDM",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SAL",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOF",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ERI",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "MIK",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "ADJ",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "DAN",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "OKA",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "SOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "THE",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "YOU",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "FLO",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        },
+        {
+          "player": "NAS",
+          "kills": 0,
+          "rank": 0,
+          "bonus": null,
+          "points": null
+        }
+      ]
+    }
+  ],
+  "events": []
+}

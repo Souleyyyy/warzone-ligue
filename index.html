@@ -142,19 +142,27 @@
     function playerById(id){ return (state.players||[]).find(p=>p.id===id); }
     function showAdmin(){ document.querySelectorAll('.hide').forEach(el=>{ if(ADMIN_ON) el.classList.remove('hide'); }); }
 
-    async function fetchRemote(){
-      if(!REMOTE_DATA_URL) { render(); return; }
-      try{
-        const url = REMOTE_DATA_URL + (REMOTE_DATA_URL.includes('?')?'&':'?') + 't=' + Date.now();
-        const res = await fetch(url, { cache: 'no-store' });
-        if(!res.ok) throw new Error('HTTP '+res.status);
-        const obj = await res.json();
-        state.players  = obj.players || [];
-        state.journees = obj.journees || [];
-        state.events   = obj.events || [];
-        saveState();
-      }catch(e){ console.error('Chargement JSON échoué:', e); render(); }
-    }
+   async function fetchRemote(){
+  if(!REMOTE_DATA_URL) return;
+  try{
+    const res = await fetch(REMOTE_DATA_URL, { cache: 'no-store' });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const obj = await res.json();
+    if(obj.players) state.players = obj.players;
+  if(obj.journees) {
+  state.journees = mergeJourneesPlus(state.journees, obj.journees);
+  // ⛔ filtre toute "journée" TOTAL (ou id 99)
+  state.journees = state.journees.filter(function(j){
+    var lab = String(j.label || '').toUpperCase();
+    return !(lab.includes('TOTAL') || j.id === 99);
+  });
+}
+
+    if(obj.events) state.events = mergeEvents(state.events,obj.events);
+    saveState();
+  }catch(e){ console.warn('Sync distante ignorée:', e); }
+}
+
 
     // === CLASSEMENT (Points = kills + bonus; on ignore e.points pour le calcul) ===
     function computeStandings(){

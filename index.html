@@ -165,28 +165,46 @@
 
 
     // === CLASSEMENT (Points = kills + bonus; on ignore e.points pour le calcul) ===
-    function computeStandings(){
-      const t = {};
-      (state.players||[]).forEach(p => t[p.id] = {id:p.id,name:p.name,color:p.color||'#6dd3ff', MJ:0, KILLS:0, Pts:0 });
+  function computeStandings(){
+  const t = {};
+  (state.players||[]).forEach(p => {
+    t[p.id] = { id:p.id, name:p.name, color:p.color||'#6dd3ff', MJ:0, KILLS:0, Pts:0 };
+  });
 
-      (state.journees||[]).forEach(j=>{
-        (j.entries||[]).forEach(e=>{
-          const row = t[e.player];
-          if(!row) return;
-          const kills = Number.isFinite(+e.kills)? +e.kills : 0;
-          const bonus = Number.isFinite(+e.bonus)? +e.bonus : (Number.isFinite(+e.rank)? (bonusMap[+e.rank]||0):0);
-          // MJ: on considère "joué" si (kills>0 || bonus>0 || points>0)
-          const played = (kills>0) || (bonus>0) || (Number.isFinite(+e.points) && +e.points>0);
-          if(played) row.MJ += 1;
-          row.KILLS += kills;
-          row.Pts   += (kills + bonus);
-        });
-      });
+  (state.journees||[]).forEach(j => {
+    // Déduplique les entrées de la journée : 1 par joueur
+    const unique = new Map();
+    (j.entries||[]).forEach(e => {
+      if(!e || !e.player) return;
+      unique.set(String(e.player).toUpperCase(), e); // garde la dernière occurrence
+    });
 
-      const arr = Object.values(t)
-        .sort((a,b)=> (b.Pts-a.Pts) || (b.KILLS-a.KILLS) || a.name.localeCompare(b.name));
-      return arr;
-    }
+    unique.forEach((e, pid) => {
+      const row = t[pid];
+      if(!row) return;
+
+      const kills = Number.isFinite(+e.kills) ? +e.kills : 0;
+      const bonus = Number.isFinite(+e.bonus)
+        ? +e.bonus
+        : (Number.isFinite(+e.rank) ? (bonusMap[+e.rank]||0) : 0);
+
+      // Compte MJ seulement si la ligne n'est pas vide
+      const played = (kills > 0) ||
+                     (bonus > 0) ||
+                     (Number.isFinite(+e.points) && +e.points > 0);
+      if(!played) return;
+
+      // PTS = kills + bonus (comme convenu)
+      row.MJ    += 1;
+      row.KILLS += kills;
+      row.Pts   += (kills + bonus);
+    });
+  });
+
+  return Object.values(t)
+    .sort((a,b)=> (b.Pts-a.Pts) || (b.KILLS-a.KILLS) || a.name.localeCompare(b.name));
+}
+
 
     // Tri dynamique
     let currentSort = {key:'Pts', dir:'desc'};
